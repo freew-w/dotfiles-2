@@ -1,0 +1,158 @@
+@theme "/dev/null"
+@import "colors.rasi"
+
+configuration {
+    modi: "window,run,drun";
+    display-drun: "Applications";
+    display-window: "Windows";
+    display-run: "Run";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+    icon-theme: "Colloid";
+}
+
+window {
+    /* properties for window widget */
+    width:                       1000px;
+
+    /* properties for all widgets */
+    border:			 2px solid;
+    border-color:		 @secondary-container;
+    border-radius:               15px;
+    background-color:            @on-primary-fixed;
+}
+
+mainbox {
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+}
+
+imagebox {
+    padding:                     20px;
+    background-color:            transparent;
+    background-image:            url("~/.current_wallpaper", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+inputbar {
+    spacing:                     10px;
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:		 @on-primary;
+    text-color:			 @on-surface;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+}
+textbox-prompt-colon {
+    expand:                      false;
+    str:                         "  ";
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+entry {
+    background-color:            inherit;
+    text-color:                  inherit;
+    placeholder:                 "Search";
+}
+
+mode-switcher{
+    spacing:                     20px;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @on-primary;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @primary;
+    text-color:                  @on-primary;
+}
+
+listview {
+    lines:                       8;
+    spacing:                     10px;
+    background-color:            transparent;
+    text-color:                  @on-surface;
+}
+
+element {
+    spacing:                     15px;
+    padding:                     8px;
+    border-radius:               10px;
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    background-color:            @error;
+    text-color:                  @on-primary;
+}
+element normal.active {
+    background-color:            @error;
+    text-color:                  @on-primary;
+}
+element selected.normal {
+    background-color:            @primary;
+    text-color:                  @on-primary;
+}
+element selected.urgent {
+    background-color:            @error;
+    text-color:                  @on-primary;
+}
+element selected.active {
+    background-color:            @primary;
+    text-color:                  @on-primary;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+message {
+    background-color:            transparent;
+}
+textbox {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @on-primary;
+    text-color:                  @on-surface;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+error-message {
+    padding:                     15px;
+    border-radius:               20px;
+    background-color:            @on-primary;
+    text-color:                  @on-surface;
+}

@@ -1,0 +1,143 @@
+@theme "/dev/null"
+@import "colors.rasi"
+
+configuration {
+    modi: "window,run,drun";
+    display-drun: "Applications";
+    display-window: "Windows";
+    display-run: "Run";
+    drun-display-format: "{icon} {name}";
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: true;
+    icon-theme: "Colloid";
+}
+
+window {
+    /* properties for window widget */
+    width:                       1000px;
+
+    /* properties for all widgets */
+    border:			 2px solid;
+    border-color: @outline-variant;
+    border-radius:               15px;
+    background-color: @surface;
+}
+
+mainbox {
+    orientation:                 horizontal;
+    children:                    [ "imagebox", "listbox" ];
+    background-color: transparent;
+}
+
+imagebox {
+    padding:                     20px;
+    background-image:            url("~/.current_wallpaper", height);
+    orientation:                 vertical;
+    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     20px;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+    background-color: transparent;
+}
+
+dummy {
+    background-color: transparent;
+}
+
+inputbar {
+    spacing:                     10px;
+    padding:                     15px;
+    border-radius:               10px;
+    children:                    [ "textbox-prompt-colon", "entry" ];
+    background-color: @secondary-container;
+}
+textbox-prompt-colon {
+    expand:                      false;
+    str:                         "  ";
+    background-color: transparent;
+    text-color: @on-secondary-container;
+}
+entry {
+    placeholder:                 "Search";
+    cursor: text;
+    background-color: transparent;
+    text-color: @on-secondary-container;
+}
+
+mode-switcher{
+    spacing:                     20px;
+    background-color: transparent;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    cursor:                      pointer;
+    background-color: @secondary-container;
+    text-color: @on-secondary-container;
+}
+button selected {
+    background-color: @primary;
+    text-color: @on-primary;
+}
+
+listview {
+    lines:                       8;
+    spacing:                     10px;
+    background-color: transparent;
+}
+element {
+    spacing:                     15px;
+    padding:                     8px;
+    border-radius:               10px;
+    cursor:                      pointer;
+    background-color: transparent;
+    text-color: @on-surface;
+}
+// element normal.normal {
+// }
+// element normal.urgent {
+// }
+// element normal.active {
+// }
+element selected.normal {
+    background-color: @primary;
+    text-color: @on-primary;
+}
+// element selected.urgent {
+// }
+element selected.active {
+    background-color: @tertiary;
+    text-color: @on-tertiary;
+}
+element-icon {
+    size:                        32px;
+    cursor:                      inherit;
+    background-color: transparent;
+}
+element-text {
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+message {
+    background-color: transparent;
+}
+textbox {
+    padding:                     15px;
+    border-radius:               10px;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    background-color: @secondary-container;
+    text-color: @on-secondary-container;
+}
+// error-message {
+//     padding:                     15px;
+//     border-radius:               20px;
+// }

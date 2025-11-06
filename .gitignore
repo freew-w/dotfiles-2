@@ -1,0 +1,11 @@
+.config/btop/
+.config/dconf/
+.config/gtk-3.0/
+.config/mozilla/
+.config/pulse/
+.config/Thunar/
+.config/xfce4/
+.config/yay/
+.config/mimeapps.list
+.config/pavucontrol.ini
+.config/user-dirs.dirs

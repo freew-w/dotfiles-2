@@ -1,0 +1,7 @@
+{
+    "include": ["./modules.jsonc"],
+    "layer": "top",
+    "modules-left": ["clock", "tray", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["battery", "custom/swaync", "pulseaudio", "backlight"]
+}
