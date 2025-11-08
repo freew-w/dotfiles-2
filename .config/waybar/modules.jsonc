@@ -68,23 +68,6 @@
         "format-icons": ["", "", "", "", ""],
         "max-length": 25
     },
-    // "custom/swaync": {
-    //     "tooltip": false,
-    //     "format": "{} {icon}",
-    //     "format-icons": {
-    //         "notification": "<span foreground='red'><sup></sup></span>",
-    //         "none": "",
-    //         "dnd-notification": "<span foreground='red'><sup></sup></span>",
-    //         "dnd-none": "",
-    //         "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-    //         "inhibited-none": "",
-    //         "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-    //         "dnd-inhibited-none": ""
-    //     },
-    //     "return-type": "json",
-    //     "exec-if": "which swaync-client",
-    //     "exec": "swaync-client -swb",
-    //     "on-click": "swaync-client -t -sw"
     "custom/swaync": {
         "tooltip": true,
         "format": "{icon}",
@@ -129,10 +112,5 @@
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", ""]
-    },
-    "custom/power": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "wlogout"
     }
 }

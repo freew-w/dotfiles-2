@@ -9,38 +9,37 @@ configuration {
     drun-display-format: "{icon} {name}";
     font: "JetBrainsMono Nerd Font 10";
     show-icons: true;
-    icon-theme: "Colloid";
 }
 
 window {
     /* properties for window widget */
-    width:                       1000px;
+    width: 1000px;
 
     /* properties for all widgets */
-    border:			 2px solid;
+    border: 2px solid;
     border-color: @outline-variant;
-    border-radius:               15px;
+    border-radius: 15px;
     background-color: @surface;
 }
 
 mainbox {
-    orientation:                 horizontal;
-    children:                    [ "imagebox", "listbox" ];
+    orientation: horizontal;
+    children: [ "imagebox", "listbox" ];
     background-color: transparent;
 }
 
 imagebox {
-    padding:                     20px;
-    background-image:            url("~/.current_wallpaper", height);
-    orientation:                 vertical;
-    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+    padding: 20px;
+    background-image: url("~/.current_wallpaper", height);
+    orientation: vertical;
+    children: [ "inputbar", "dummy", "mode-switcher" ];
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     20px;
-    orientation:                 vertical;
-    children:                    [ "message", "listview" ];
+    spacing: 20px;
+    padding: 20px;
+    orientation: vertical;
+    children: [ "message", "listview" ];
     background-color: transparent;
 }
 
@@ -49,33 +48,33 @@ dummy {
 }
 
 inputbar {
-    spacing:                     10px;
-    padding:                     15px;
-    border-radius:               10px;
-    children:                    [ "textbox-prompt-colon", "entry" ];
+    spacing: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    children: [ "textbox-prompt-colon", "entry" ];
     background-color: @secondary-container;
 }
 textbox-prompt-colon {
-    expand:                      false;
-    str:                         "  ";
+    expand: false;
+    str: "  ";
     background-color: transparent;
     text-color: @on-secondary-container;
 }
 entry {
-    placeholder:                 "Search";
+    placeholder: "Search";
     cursor: text;
     background-color: transparent;
     text-color: @on-secondary-container;
 }
 
 mode-switcher{
-    spacing:                     20px;
+    spacing: 20px;
     background-color: transparent;
 }
 button {
-    padding:                     15px;
-    border-radius:               10px;
-    cursor:                      pointer;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
     background-color: @secondary-container;
     text-color: @on-secondary-container;
 }
@@ -85,15 +84,15 @@ button selected {
 }
 
 listview {
-    lines:                       8;
-    spacing:                     10px;
+    lines: 8;
+    spacing: 10px;
     background-color: transparent;
 }
 element {
-    spacing:                     15px;
-    padding:                     8px;
-    border-radius:               10px;
-    cursor:                      pointer;
+    spacing: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
     background-color: transparent;
     text-color: @on-surface;
 }
@@ -114,14 +113,14 @@ element selected.active {
     text-color: @on-tertiary;
 }
 element-icon {
-    size:                        32px;
-    cursor:                      inherit;
+    size: 32px;
+    cursor: inherit;
     background-color: transparent;
 }
 element-text {
-    cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
+    cursor: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
     background-color: transparent;
     text-color: inherit;
 }
@@ -130,14 +129,14 @@ message {
     background-color: transparent;
 }
 textbox {
-    padding:                     15px;
-    border-radius:               10px;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
+    padding: 15px;
+    border-radius: 10px;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
     background-color: @secondary-container;
     text-color: @on-secondary-container;
 }
 // error-message {
-//     padding:                     15px;
-//     border-radius:               20px;
+//     padding: 15px;
+//     border-radius: 20px;
 // }

@@ -2,14 +2,14 @@
 
 wallpaper_dir="$HOME/wallpapers/"
 
-wallpaper_filename=$(
+wallpaper_filename="$(
     for file in $wallpaper_dir*.{jpg,jpeg,png,gif}; do
         [[ ! -f "$file" ]] && continue
         printf "$(basename "$file")\0icon\x1fthumbnail://$file\n"
     done | rofi -dmenu \
         -theme-str "element-icon { size: 140px; }" \
         -theme-str "listview { lines: 3; }"
-    )
+    )"
 
 # Exit with exit code 1 if no wallpaper is selected
 [[ -z "$wallpaper_filename" ]] && exit 1

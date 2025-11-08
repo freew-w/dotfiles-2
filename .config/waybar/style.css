@@ -48,7 +48,7 @@
 #workspaces > button.active {
     background: @primary;
     color: @on_primary;
-    padding: 0px 19px;
+    padding: 0 19px;
 }
 
 #clock:hover,
