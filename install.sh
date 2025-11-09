@@ -36,7 +36,8 @@ confirm_yes() {
 install_dependencies() {
     essentials="
     $(pacman -Ssq noto-fonts) $(pacman -Ssq ttf-jetbrains)
-    hyprland hypridle hyprlock
+    hyprland hypridle hyprlock hyprpolkitagent xdg-desktop-portal xdg-desktop-portal-hyprland
+    brightnessctl
     kitty
     fastfetch
     swww
@@ -59,17 +60,16 @@ install_dependencies() {
 
     optionals="
     blueman
-    brightnessctl
     btop
     firefox
     git github-cli lazygit
-    hyprpolkitagent
-    man
+    man-db
+    materia-gtk-theme
+    nwg-look
     network-manager-applet
     snapper
     stow
     thunar tumbler
-    xdg-desktop-portal xdg-desktop-portal-hyprland
     "
 
     log "Installing dependencies"
