@@ -89,12 +89,17 @@ install_yay() {
     if ! which yay &> /dev/null; then
         log "Installing yay"
         sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd .. && rm -rf yay
+        return 0
     fi
+    log "Yay installed -- skipping"
 }
 
 link_configs_stow() {
     if ! which stow &> /dev/null; then
+        log "Installing stow"
         sudo pacman -S --needed --noconfirm stow
+    else
+        log "Stow installed -- skipping"
     fi
 
     config_dir="$HOME/.config"
@@ -128,7 +133,7 @@ main() {
 
     hyprctl reload &> /dev/null
 
-    log "Installation completed. Restart hyprland or reboot for all changes to take effect"
+    log "Installation completed. Re-login or reboot for all changes to take effect"
 }
 
 main
