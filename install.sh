@@ -131,4 +131,4 @@ main() {
     log "Installation completed. Restart hyprland or reboot for all changes to take effect"
 }
 
-main $@
+main
