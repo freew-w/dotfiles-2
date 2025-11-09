@@ -86,7 +86,7 @@
             "loop-carousel": false
         },
         "buttons-grid": {
-            "buttons-per-row": 7,
+            "buttons-per-row": 5,
             "actions": [
                 {
                     "label": "",
@@ -100,7 +100,7 @@
                     "type": "toggle",
                     "active": true,
                     "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && bluetoothctl power on || bluetoothctl power off'",
-                    "update-command": "~/.config/swaync/bluetooth_status.sh"
+                    "update-command": "~/scripts/bluetooth_status.sh"
                 },
                 {
                     "label": "",
@@ -119,12 +119,12 @@
                 {
                     "label": "",
                     "type": "normal",
-                    "command": "~/.config/swaync/screenshot.sh"
+                    "command": "~/scripts/screenshot.sh"
                 },
                 {
                     "label": "",
                     "type": "normal",
-                    "command": "~/.config/swaync/power_profile.sh"
+                    "command": "~/scripts/power_profile.sh"
                 },
                 {
                     "label": "",
