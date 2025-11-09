@@ -105,12 +105,16 @@
             "default": ["", ""]
         },
         "scroll-step": 1,
-        "on-click": "pavucontrol",
+        "on-click": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-click-right": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+        "on-click-middle": "pavucontrol",
         "ignored-sinks": ["Easy Effects Sink"]
     },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", ""],
+        "on-click": "brightnessctl set 5%+",
+        "on-click-right": "brightnessctl set 5%-"
     }
 }
