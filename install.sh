@@ -66,6 +66,7 @@ install_dependencies() {
     git github-cli lazygit
     man-db
     materia-gtk-theme
+    papirus-icon-theme
     nwg-look
     network-manager-applet
     snapper
