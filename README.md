@@ -60,12 +60,26 @@ wlogout
 matugen-bin
 ```
 
+### Generate Other Files
+```
+~/.scripts/looknfeel_switcher.sh
+~/.scripts/wallpaper_switcher.sh
+```
+
 ### Start Services
 ```
-sudo systemctl enable --now bluetooth
+sudo systemctl enable --now bluetooth tuned
 ```
 
 ### Change Shell
 ```
 chsh -s $(which zsh)
+```
+
+### Install Oh My Zsh
+https://ohmyz.sh/#install
+
+### Apply Gtk Theme
+```
+nwg-look
 ```
