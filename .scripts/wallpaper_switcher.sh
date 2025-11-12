@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wallpaper_dir="$HOME/wallpapers/"
+wallpaper_dir="$HOME/.wallpapers/"
 
 wallpaper_filename="$(
     for file in $wallpaper_dir*.{jpg,jpeg,png,gif}; do
