@@ -20,3 +20,4 @@
 .config/xsettingsd
 .config/hypr/configs/looknfeel_current.conf
 .config/nvim/lazy-lock.json
+.config/ezame/preferences

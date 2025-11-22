@@ -15,6 +15,7 @@ btop
 btrfs-progs
 cliphist
 efibootmgr
+ezame
 fastfetch
 file-roller
 firefox
@@ -67,6 +68,7 @@ ttf-jetbrains-mono-nerd
 tumbler
 tuned
 waybar
+wget
 wireplumber
 wl-clipboard
 wlogout
@@ -74,8 +76,10 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 yay-bin
 yay-bin-debug
+yazi
 zram-generator
 zsh
+
 ```
 
 ### Generate Other Files
