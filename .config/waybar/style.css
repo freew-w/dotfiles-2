@@ -9,7 +9,7 @@
     background: transparent;
 }
 #waybar > box {
-    margin: 2px 5px 0 5px;
+    margin: 3px;
 }
 #waybar.empty #window {
     background: transparent;
@@ -26,7 +26,7 @@
     background: alpha(@surface_container, 0.75);
     color: @primary;
     margin: 0 3px;
-    padding: 2px 15px;
+    padding: 0 15px;
     border-radius: 20px;
 }
 #clock {
@@ -40,7 +40,7 @@
     transition: all 0.3s ease-out;
     border-radius: 20px;
     padding: 0 7px;
-    margin: 3px 2px;
+    margin: 5px 3px;
     border-style: none;
     text-shadow: none;
     box-shadow: none;
@@ -48,7 +48,7 @@
 #workspaces > button.active {
     background: @primary;
     color: @on_primary;
-    padding: 0 19px;
+    padding: 0 20px;
 }
 
 #clock:hover,
