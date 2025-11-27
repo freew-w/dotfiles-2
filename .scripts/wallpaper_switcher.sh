@@ -9,7 +9,7 @@ wallpaper_filename="$(
     done | rofi -dmenu \
         -theme-str "element-icon { size: 140px; }" \
         -theme-str "listview { lines: 3; }"
-    )"
+)"
 
 # Exit with exit code 1 if no wallpaper is selected
 [[ -z "$wallpaper_filename" ]] && exit 1
