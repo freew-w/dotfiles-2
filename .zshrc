@@ -109,3 +109,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias h="hyprland"
 alias updrb="echo 'Printing arch news' && yay -Pw && printf 'Press Enter to continue... ' && read && yay && systemctl reboot"
+
+alias src="source venv/bin/activate"
