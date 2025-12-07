@@ -22,3 +22,6 @@
 .config/nvim/lazy-lock.json
 .config/ezame/preferences
 .config/waybar/style.css
+.config/fcitx/dbus
+.config/fcitx5
+.config/ibus/bus
