@@ -137,6 +137,13 @@
                     "command": "~/.scripts/looknfeel.sh"
                 },
                 {
+                    "label": "󰒳",
+                    "type": "toggle",
+                    "active": false,
+                    "command": "~/.scripts/hypridle.sh",
+                    "update-command": "pidof hypridle && echo false || echo true"
+                },
+                {
                     "label": "",
                     "type": "normal",
                     "command": "wlogout"
