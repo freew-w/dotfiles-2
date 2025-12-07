@@ -1,4 +1,5 @@
 #!/bin/bash
+
 current="$(tuned-adm active | cut -d " " -f4)"
 new=""
 
