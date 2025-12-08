@@ -2,8 +2,8 @@
 
 if [[ -n "$(pidof hypridle)" ]]; then
     pkill -x hypridle
-    notify-send "Hypridle disabled"
+    notify-send "󰒳 Hypridle disabled"
 else
     hypridle &
-    notify-send "Hypridle enabled"
+    notify-send "󰒲 Hypridle enabled"
 fi
