@@ -18,8 +18,11 @@ cliphist
 efibootmgr
 ezame
 fastfetch
-file-roller
+fcitx5
+fcitx5-chinese-addons
+fcitx5-configtool
 firefox
+flatpak
 git
 github-cli
 grim
@@ -31,6 +34,7 @@ hyprpolkitagent
 intel-ucode
 jdk21-temurin
 jdk8-temurin
+jq
 kitty
 lazygit
 libnotify
@@ -47,6 +51,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
+npm
 nwg-look
 papirus-icon-theme
 pavucontrol
@@ -54,6 +59,7 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+python-pip
 ripgrep
 rofi
 sklauncher-bin
@@ -62,13 +68,9 @@ sof-firmware
 stow
 swaync
 swww
-thunar
-thunar-archive-plugin
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
-tumbler
 tuned
-unzip
 waybar
 wget
 wireplumber
